@@ -3,6 +3,8 @@
   <ul>
     <li *ngFor="let people of peoples">
       Name: {{ people.name }} - Type : {{ people.type }}
+      <button (click)="showAge(people)">Show age</button>
     </li>
   </ul>
+  <h3>{{ peopleDetails }}</h3>
 </div>
