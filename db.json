@@ -1,0 +1,10 @@
+{
+  "peoples": [
+    { "id": 1, "name": "Joel", "type": "Desenvolvedor", "age": 4 },
+    { "id": 2, "name": "Mirela", "type": "Enfermeira", "age": 10 },
+    { "id": 3, "name": "Geovania", "type": "Padeira", "age": 15 },
+    { "id": 4, "name": "Deivan", "type": "Padeira", "age": 23 },
+    { "id": 4, "name": "Zé Maria", "type": "Dono de bar", "age": 11 },
+    { "id": 4, "name": "Pedro", "type": "Jogador", "age": 27 }
+  ]
+}
