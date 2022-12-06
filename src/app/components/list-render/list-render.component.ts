@@ -8,16 +8,13 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./list-render.component.css'],
 })
 export class ListRenderComponent implements OnInit {
-  peoples: People[] = [
-    { name: 'Joel', type: 'Developer', age: 39 },
-    { name: 'Mirela', type: 'Enfermeira', age: 26 },
-    { name: 'Geovania', type: 'Padeira', age: 41 },
-    { name: 'Deivan', type: 'Otário-Zé Mané', age: 24 },
-  ];
+  peoples: People[] = [];
 
   peopleDetails = '';
 
-  constructor(private listService: ListService) {}
+  constructor(private listService: ListService) {
+    this.getPeople();
+  }
 
   ngOnInit(): void {}
 
@@ -28,5 +25,10 @@ export class ListRenderComponent implements OnInit {
   removePeople(people: People) {
     console.log('Removing person');
     this.peoples = this.listService.remove(this.peoples, people);
+  }
+  getPeople(): void {
+    this.listService.getAll().subscribe((people) => {
+      this.peoples = people;
+    });
   }
 }
