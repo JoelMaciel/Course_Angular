@@ -23,8 +23,8 @@ export class ListRenderComponent implements OnInit {
   }
 
   removePeople(people: People) {
-    console.log('Removing person');
-    this.peoples = this.listService.remove(this.peoples, people);
+    this.peoples = this.peoples.filter((a) => people.name !== a.name);
+    this.listService.remove(people.id).subscribe();
   }
   getPeople(): void {
     this.listService.getAll().subscribe((people) => {
