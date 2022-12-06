@@ -1,6 +1,10 @@
-# CourseAngular
-# Instructor Matheus Battisti
-# course  link : https://www.youtube.com/watch?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw&index=1
+# Angular course  -  First steps with learning this Framework.
+
+## Instructor Matheus Battisti
+
+# course  link 
+
+ https://www.youtube.com/watch?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw&index=1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
